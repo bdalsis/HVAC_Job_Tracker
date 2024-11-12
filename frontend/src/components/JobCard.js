@@ -1,4 +1,3 @@
-// JobCard.js
 import React from 'react';
 import { useDrag } from 'react-dnd';
 import '../styles/JobCard.css';
