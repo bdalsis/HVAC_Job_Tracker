@@ -1,33 +1,42 @@
 .new-job-form {
-    padding: 16px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 20px;
     border-radius: 8px;
-    background-color: #f7f8fa;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-bottom: 20px;
 }
 
 .new-job-form input,
 .new-job-form textarea,
 .new-job-form button {
-    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 10px;
-    margin-bottom: 12px;
-    border-radius: 6px;
-    border: 1px solid #d1d5db;
-    font-size: 1em;
+    font-size: 1rem;
+}
+
+.new-job-form input:focus,
+.new-job-form textarea:focus {
+    outline: none;
+    border-color: #6c63ff;
+    /* purple focus outline */
 }
 
 .new-job-form button {
-    background-color: #0073e6;
+    background-color: #6c63ff;
+    /* purple button */
     color: white;
     border: none;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.3s;
 }
 
 .new-job-form button:hover {
-    background-color: #005bb5;
+    background-color: #574b90;
+    /* darker purple on hover */
 }

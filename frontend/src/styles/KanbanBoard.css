@@ -1,8 +1,16 @@
-/* KanbanBoard.css */
 .kanban-board {
     display: flex;
-    justify-content: space-around;
+    gap: 20px;
     width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #4a4e69;
+    /* dark purple */
+    text-align: center;
+    margin-bottom: 10px;
 }

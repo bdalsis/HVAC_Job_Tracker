@@ -1,19 +1,26 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f8fa;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-h1 {
-  text-align: center;
-  color: #0073e6;
+/* Global styles */
+* {
+  font-family: 'Roboto', sans-serif;
+  /* Applying the font globally */
 }
 
 .app-container {
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f3f4f6;
+  /* light grey background */
+  color: #333;
+  min-height: 100vh;
   padding: 20px;
+}
+
+h1 {
+  color: #4a4e69;
+  /* dark purple for the main title */
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
