@@ -4,7 +4,7 @@ const { Pool } = require('pg');
 
 const app = express();
 const port = 3001;
-const pool = new Pool({ connectionString: "postgresql://username:password@localhost:5432/HVAC_job_board" });
+const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
 app.use(cors());
 app.use(express.json());
