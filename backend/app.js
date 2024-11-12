@@ -3,7 +3,8 @@ const cors = require('cors');
 const { Pool } = require('pg');
 
 const app = express();
-const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+const port = 3001;
+const pool = new Pool({ connectionString: "postgresql://username:password@localhost:5432/database_name" });
 
 app.use(cors());
 app.use(express.json());
@@ -35,4 +36,6 @@ app.put('/jobs/:id/status', async (req, res) => {
     res.json(result.rows[0]);
 });
 
-app.listen(3001, () => console.log('Server running on port 3001'));
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+});
