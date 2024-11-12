@@ -14,6 +14,7 @@ const JobCard = ({ job }) => {
     return (
         <div ref={drag} className="job-card" style={{ opacity: isDragging ? 0.5 : 1 }}>
             <p><strong>Customer:</strong> {job.customer_name}</p>
+            <p><strong>Customer Phone:</strong> {job.customer_phone}</p>
             <p><strong>Description:</strong> {job.description}</p>
             <p><strong>Technician:</strong> {job.technician}</p>
         </div>
