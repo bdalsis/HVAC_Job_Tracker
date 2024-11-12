@@ -3,7 +3,7 @@ import axios from 'axios';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import Column from './Column';
-import '../styles/KanbanBoard.css';
+import '../styles/Kanban.css';
 
 const KanbanBoard = () => {
     const [jobs, setJobs] = useState([]);
