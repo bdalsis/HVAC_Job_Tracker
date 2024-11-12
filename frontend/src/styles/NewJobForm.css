@@ -1,0 +1,33 @@
+.new-job-form {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f7f8fa;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.new-job-form input,
+.new-job-form textarea,
+.new-job-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 1em;
+}
+
+.new-job-form button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.new-job-form button:hover {
+    background-color: #005bb5;
+}
